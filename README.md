@@ -14,4 +14,29 @@
 
 You can find the training history and results under './logs' folder.
 
+Meanwhile, the `scripts` folder contains all the execution scripts for our **DeCI** model, as well as scripts for **FC-based methods** (under the `FC` folder) and **general time-series models** (under the `GeneralTS` folder). To reproduce the full set of DeCI results reported in the paper, you can run:
+
+```
+python hrun.py --opt 1
+```
+
+To run all the FC-based baselines, use:
+
+```
+python hrun.py --opt 2
+```
+
+For general time-series methods, use:
+
+```
+python hrun.py --opt 3
+```
+
+Once the experiments are complete, you can run:
+
+```
+python extract_re.py
+```
+
+This script will automatically aggregate and organize the logs, generating the final performance tables based on the best hyperparameter configurations.
 
