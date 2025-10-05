@@ -11,14 +11,20 @@ def execute_sh_files_in_directory(directory):
                 os.system(sh_file_path)
 def main():
     parser = argparse.ArgumentParser(description="Execute .sh files in a specified directory")
-    parser.add_argument("--opt", default=1,type=int, required=False, help="Specify the option, choose from 1: DeCI, 2: FC, 3: GeneralTS")
+    parser.add_argument("--opt", default=1,type=int, required=False, help="Specify the option for training")
     args = parser.parse_args()
     if args.opt == 1:
-        scripts_directory = "scripts/DeCI"
+        scripts_directory = "scripts/Attn"
     elif args.opt == 2:
-        scripts_directory = "scripts/FC"
+        scripts_directory = "scripts/DeCI"
     elif args.opt == 3:
+        scripts_directory = "scripts/dFC"
+    elif args.opt == 4:
+        scripts_directory = "scripts/FC"
+    elif args.opt == 5:
         scripts_directory = "scripts/GeneralTS"
+    elif args.opt == 6:
+        scripts_directory = "scripts/Multi_View"
     else:
         print("Invalid option specified.")
         return
