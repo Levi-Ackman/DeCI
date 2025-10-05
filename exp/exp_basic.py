@@ -1,7 +1,7 @@
 import os
 import torch
 from models import iTransformer,SOFTS,TimesNet,\
-            PatchTST,TSMixer,TimeMixer,ModernTCN,Leddam,DeCI,Medformer,BrainOOD,BrainNetTF
+            PatchTST,TSMixer,TimeMixer,ModernTCN,Leddam,DeCI,Medformer,BrainOOD,BrainNetTF,BrainTGL,MDGL,STAGIN,PSCRAttn,SimMVF,MVHO
 
 class Exp_Basic(object):
     def __init__(self, args):
@@ -20,6 +20,12 @@ class Exp_Basic(object):
             'TimesNet':TimesNet,
             'BrainOOD':BrainOOD,
             'BrainNetTF':BrainNetTF,
+            'BrainTGL':BrainTGL,
+            'MDGL':MDGL,
+            'STAGIN':STAGIN,
+            'PSCRAttn':PSCRAttn,
+            'SimMVF':SimMVF,
+            'MVHO':MVHO,
         }
         self.model, self.initial_model= self._build_model()
     def _build_model(self):

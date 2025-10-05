@@ -1,4 +1,4 @@
-from data_provider.data_loader_CV import PPMI_Dataset,Mātai_Dataset,Neurocon_Dataset,Neurocon_Dataset,Abide_Dataset
+from data_provider.data_loader_CV import PPMI_Dataset,Mātai_Dataset,Neurocon_Dataset,Neurocon_Dataset,Abide_Dataset,ADNI_Dataset
 from torch.utils.data import DataLoader
 from sklearn.model_selection import StratifiedKFold
 import torch
@@ -10,6 +10,7 @@ data_dict = {
     'Neurocon': Neurocon_Dataset,
     'Taowu': Neurocon_Dataset,
     'Abide': Abide_Dataset,
+    'ADNI': ADNI_Dataset,
 }
 
 def collate_fn(batch, max_len):

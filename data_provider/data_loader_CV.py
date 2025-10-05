@@ -1,6 +1,7 @@
 import os
 import scipy.io
 import torch
+import numpy as np
 from torch.utils.data import Dataset
 
 class PPMI_Dataset(Dataset):
@@ -87,7 +88,7 @@ class Mātai_Dataset(Dataset):
     
 class Neurocon_Dataset(Dataset):
     """
-    A custom dataset class for loading time-series data from the Mātai dataset.
+    A custom dataset class for loading time-series data from the Neurocon dataset.
     
     Args:
         data_type: Choose from [TS: raw time series, FC: functional connectivity]
@@ -128,7 +129,7 @@ class Neurocon_Dataset(Dataset):
     
 class Taowu_Dataset(Dataset):
     """
-    A custom dataset class for loading time-series data from the Mātai dataset.
+    A custom dataset class for loading time-series data from the Taowu dataset.
     
     Args:
         data_type: Choose from [TS: raw time series, FC: functional connectivity]
@@ -165,11 +166,10 @@ class Taowu_Dataset(Dataset):
 
     def __getitem__(self, idx):
         return self.data[idx], self.labels[idx]
-    
-    
+
 class Abide_Dataset(Dataset):
     """
-    A custom dataset class for loading time-series data from the Mātai dataset.
+    A custom dataset class for loading time-series data from the ABIDE dataset.
     
     Args:
         data_type: Choose from [TS: raw time series, FC: functional connectivity]
@@ -205,6 +205,36 @@ class Abide_Dataset(Dataset):
                             signal_resized = signal
                             self.data.append(signal_resized)
                             self.labels.append(torch.tensor(label, dtype=torch.long))
+
+    def __len__(self):
+        return len(self.data)
+
+    def __getitem__(self, idx):
+        return self.data[idx], self.labels[idx]
+
+
+
+class ADNI_Dataset(Dataset):
+    """
+    A custom dataset class for loading time-series data from the ADNI dataset.
+    """
+    def __init__(self, source_dir="/data/gqyu/FMRI/dataset/ADNI/ADNI", data_type='TS', protocol="AAL116", seq_len=197):
+        self.source_dir = source_dir
+        self.categories = ['Control', 'MCI', 'AD']   # 0,1,2
+        self.data = []
+        self.labels = []
+        self._load_data()
+
+    def _load_data(self):
+        for label, category in enumerate(self.categories):
+            category_dir = os.path.join(self.source_dir, category)
+            for fname in os.listdir(category_dir):
+                fpath = os.path.join(category_dir, fname)
+                arr = np.load(fpath)
+                x = torch.from_numpy(arr.astype(np.float32)) 
+                y = torch.tensor(label, dtype=torch.long)
+                self.data.append(x)
+                self.labels.append(y)
 
     def __len__(self):
         return len(self.data)
