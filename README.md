@@ -8,13 +8,15 @@
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download all the datasets from [**datasets**](https://drive.google.com/u/0/uc?id=1EtxBoOulKMCJ8y6Zh5GtxH56pOYHDlD0&export=download). **All the datasets are well pre-processed** and can be used easily. Then place them under a folder `./dataset`.
 3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. 
-4. You can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets, for example, you can use the below command line to obtain the result of DeCI on TaoWu:
+4. You can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets. For example, you can use the command below to obtain the result of DeCI on TaoWu:
    
       ```bash scripts/DeCI/Taowu.sh ```
 
-You can find the training history and results under './logs' folder.
+You can find the training history and results under the './logs' folder.
 
-Meanwhile, the `scripts` folder contains all the execution scripts for our **DeCI** model, as well as scripts for **FC-based methods** (under the `FC` folder) and **general time-series models** (under the `GeneralTS` folder). To reproduce the full set of DeCI results reported in the paper, you can run:
+Meanwhile, the `scripts` folder contains all the execution scripts for our **DeCI** model, as well as scripts for **FC-based methods** (under the `FC` folder), **dFC-based methods** (under the `dFC` folder), **general time-series models** (under the `GeneralTS` folder), **Multi-View-based methods** (under the `Multi_View` folder), and **Attention-based methods** (under the `Attn` folder). 
+
+To reproduce the full set of DeCI results reported in the paper, you can run:
 
 ```
 python hrun.py --opt 1
