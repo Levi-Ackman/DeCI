@@ -14,17 +14,17 @@ def main():
     parser.add_argument("--opt", default=1,type=int, required=False, help="Specify the option for training")
     args = parser.parse_args()
     if args.opt == 1:
-        scripts_directory = "./scripts/DeCI"
+        scripts_directory = "scripts/DeCI"
     elif args.opt == 2:
-        scripts_directory = "./scripts/FC"
+        scripts_directory = "scripts/FC"
     elif args.opt == 3:
-        scripts_directory = "./scripts/dFC"
+        scripts_directory = "scripts/dFC"
     elif args.opt == 4:
-        scripts_directory = "./scripts/GeneralTS"
+        scripts_directory = "scripts/GeneralTS"
     elif args.opt == 5:
-        scripts_directory = "./scripts/Multi_View"
+        scripts_directory = "scripts/Multi_View"
     elif args.opt == 6:
-        scripts_directory = "./scripts/Attn"
+        scripts_directory = "scripts/Attn"
     else:
         print("Invalid option specified.")
         return
