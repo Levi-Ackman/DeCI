@@ -28,10 +28,28 @@ To run all the FC-based baselines, use:
 python hrun.py --opt 2
 ```
 
-For general time-series methods, use:
+To run all the dFC-based baselines, use:
 
 ```
 python hrun.py --opt 3
+```
+
+For general time-series methods, use:
+
+```
+python hrun.py --opt 4
+```
+
+For Multi-view based methods, use:
+
+```
+python hrun.py --opt 5
+```
+
+For Attention-based methods, use:
+
+```
+python hrun.py --opt 6
 ```
 
 Once the experiments are complete, you can run:
