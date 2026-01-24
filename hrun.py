@@ -16,13 +16,15 @@ def main():
     if args.opt == 1:
         scripts_directory = "./scripts/DeCI"
     elif args.opt == 2:
-        scripts_directory = "./scripts/Attn"
+        scripts_directory = "./scripts/FC"
     elif args.opt == 3:
-        scripts_directory = "./scripts/GeneralTS"
-    elif args.opt == 4:
-        scripts_directory = "./scripts/Multi_View"
-    elif args.opt == 5:
         scripts_directory = "./scripts/dFC"
+    elif args.opt == 4:
+        scripts_directory = "./scripts/GeneralTS"
+    elif args.opt == 5:
+        scripts_directory = "./scripts/Multi_View"
+    elif args.opt == 6:
+        scripts_directory = "./scripts/Attn"
     else:
         print("Invalid option specified.")
         return
