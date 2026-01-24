@@ -14,29 +14,15 @@ def main():
     parser.add_argument("--opt", default=1,type=int, required=False, help="Specify the option for training")
     args = parser.parse_args()
     if args.opt == 1:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Attn/PSCRAttn/Abide"
+        scripts_directory = "./scripts/DeCI"
     elif args.opt == 2:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Attn/PSCRAttn/other"
+        scripts_directory = "./scripts/Attn"
     elif args.opt == 3:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Attn/STAGIN/Abide"
+        scripts_directory = "./scripts/GeneralTS"
     elif args.opt == 4:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Attn/STAGIN/other"
+        scripts_directory = "./scripts/Multi_View"
     elif args.opt == 5:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/dFC/BrainTGL/Abide"
-    elif args.opt == 6:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/dFC/BrainTGL/other"
-    elif args.opt == 7:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/dFC/MDGL/Abide"
-    elif args.opt == 8:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/dFC/MDGL/other"
-    elif args.opt == 9:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Multi_View/MVHO/Abide"
-    elif args.opt == 10:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Multi_View/MVHO/other"
-    elif args.opt == 11:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Multi_View/SimMVF/Abide"
-    elif args.opt == 12:
-        scripts_directory = "/data/gqyu/FMRI/TMI_Re/base/scripts/Multi_View/SimMVF/other"    
+        scripts_directory = "./scripts/dFC"
     else:
         print("Invalid option specified.")
         return
