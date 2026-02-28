@@ -8,6 +8,14 @@
 **[<a href="https://arxiv.org/abs/2602.08262">Paper</a>]**
 </div>
 
+## Introduction
+<img width="1134" height="407" alt="image" src="https://github.com/user-attachments/assets/470687ea-e3e4-4f63-8e12-62851ab593cc" />
+<img width="1705" height="662" alt="image" src="https://github.com/user-attachments/assets/d74d45cf-0209-4c0c-9a1a-9648f949a3ca" />
+<img width="850" height="458" alt="image" src="https://github.com/user-attachments/assets/198538fb-b49c-4347-bfc4-4d447afa5c83" />
+<img width="837" height="372" alt="image" src="https://github.com/user-attachments/assets/5a0976af-1932-4bdf-8025-a6cd9e2f71f9" />
+<img width="829" height="327" alt="image" src="https://github.com/user-attachments/assets/d18abc07-2659-4391-af67-0832208d7c9a" />
+<img width="834" height="577" alt="image" src="https://github.com/user-attachments/assets/76e505ea-9105-4e73-8eac-7f900f3a12aa" />
+
 ## Usage
 
 1. Install requirements. ```pip install -r requirements.txt```
