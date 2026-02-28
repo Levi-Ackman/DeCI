@@ -25,7 +25,7 @@
 <img width="1705" height="662" alt="image" src="https://github.com/user-attachments/assets/d74d45cf-0209-4c0c-9a1a-9648f949a3ca" />
 </p>
 
-🏆 DeCI (Channel-Independent) is more **noise-robust** than other Channel-Dependent baselines (*e.g.*, **iTransformer**, **TimesNet**).
+🏆 DeCI (Channel-Independent) is more **noise-robust** than other Channel-Dependent baselines (*e.g.*, **iTransformer**).
 
 <p align="center">
 <img width="829" height="327" alt="image" src="https://github.com/user-attachments/assets/d18abc07-2659-4391-af67-0832208d7c9a" />
