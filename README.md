@@ -74,3 +74,17 @@ We appreciate the following GitHub repos a lot for their valuable code and effor
 - Leddam (https://github.com/Levi-Ackman/Leddam)
 - Jiaxing Xu *et al.* (https://github.com/brainnetuoa/data_driven_network_neuroscience)
 
+## Citation
+If you find this repo helpful, please cite our paper.
+
+```
+@article{Yu2026DeCI,
+  title        = {Moving Beyond Functional Connectivity: Time-Series Modeling for fMRI-Based Brain Disorder Classification},
+  author       = {Yu, Guoqi and Hu, Xiaowei and Aviles-Rivero, Angelica I. and Qiu, Anqi and Wang, Shujun},
+  journal      = {arXiv preprint arXiv:2602.08262},
+  year         = {2026},
+  url          = {https://arxiv.org/abs/2602.08262},
+  doi          = {10.48550/arXiv.2602.08262}
+}
+```
+
