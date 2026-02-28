@@ -3,6 +3,11 @@
   <h2><b> Moving Beyond Functional Connectivity: Time-Series Modeling for fMRI-Based Brain Disorder Classification (IEEE TMI) </b></h2>
 </div>
 
+<div align="center">
+
+**[<a href="https://arxiv.org/abs/2602.08262">Paper</a>]**
+</div>
+
 ## Get Started
 
 1. Install requirements. ```pip install -r requirements.txt```
