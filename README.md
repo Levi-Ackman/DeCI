@@ -65,3 +65,12 @@ python extract_re.py
 
 This script will automatically aggregate and organize the logs, generating the final performance tables based on the best hyperparameter configurations.
 
+## Acknowledgment
+
+We appreciate the following GitHub repos a lot for their valuable code and efforts:
+
+- Time-Series-Library (https://github.com/thuml/Time-Series-Library)
+- ModernTCN (https://github.com/luodhhh/ModernTCN)
+- Leddam (https://github.com/Levi-Ackman/Leddam)
+- Jiaxing Xu *et al.* (https://github.com/brainnetuoa/data_driven_network_neuroscience)
+
