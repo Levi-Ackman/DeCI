@@ -9,12 +9,39 @@
 </div>
 
 ## Introduction
+🌟 Although FC remains the dominant fMRI input, we find that GCNs/Transformers perform better when fed tokenized raw BOLD time series. Shuffling BOLD temporal order while preserving FC reduces performance to the FC baseline.
+
 <img width="1134" height="407" alt="image" src="https://github.com/user-attachments/assets/470687ea-e3e4-4f63-8e12-62851ab593cc" />
-<img width="1705" height="662" alt="image" src="https://github.com/user-attachments/assets/d74d45cf-0209-4c0c-9a1a-9648f949a3ca" />
-<img width="850" height="458" alt="image" src="https://github.com/user-attachments/assets/198538fb-b49c-4347-bfc4-4d447afa5c83" />
+
+🏆 We benchmark several recent time-series models (*e.g.*, [**Leddam**](https://arxiv.org/abs/2402.12694), [**iTransformer**](https://arxiv.org/abs/2310.06625); ***the red boxes below indicate time-series–based methods***) and find that they generally outperform traditional FC/dFC methods.
+
+<p align="center">
 <img width="837" height="372" alt="image" src="https://github.com/user-attachments/assets/5a0976af-1932-4bdf-8025-a6cd9e2f71f9" />
+</p>
+
+🌟 This motivates us to explore how recent advances in time-series analysis can benefit fMRI modeling. Building on two key principles in modern time-series research, **Channel-Independence (CI)** and **Seasonal–Trend Decomposition**, we propose **DeCI**, which performs deep **cycle (seasonal)** and **drift (trend)** decomposition via progressive residual extraction, models each ROI time series in a **CI** manner, and fuses predictions at the **logit** level.
+
+<p align="center">
+<img width="1705" height="662" alt="image" src="https://github.com/user-attachments/assets/d74d45cf-0209-4c0c-9a1a-9648f949a3ca" />
+</p>
+
+🏆 DeCI (Channel-Independent) is more **noise-robust** than other Channel-Dependent baselines (*e.g.*, **iTransformer**, **TimesNet**).
+
+<p align="center">
 <img width="829" height="327" alt="image" src="https://github.com/user-attachments/assets/d18abc07-2659-4391-af67-0832208d7c9a" />
+</p>
+
+🌟 **Seasonal–Trend Decomposition (or Cycle–Drift Decomposition for fMRI) substantially enhances the discriminability of raw features.**
+
+<p align="center">
 <img width="834" height="577" alt="image" src="https://github.com/user-attachments/assets/76e505ea-9105-4e73-8eac-7f900f3a12aa" />
+</p>
+
+🏆 **DeCI achieves strong performance with low computational overhead.**
+
+<p align="center">
+<img width="850" height="458" alt="image" src="https://github.com/user-attachments/assets/198538fb-b49c-4347-bfc4-4d447afa5c83" />
+</p>
 
 ## Usage
 
