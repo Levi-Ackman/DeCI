@@ -6,7 +6,7 @@
 <div align="center">
 
 **[<a href="https://arxiv.org/abs/2602.08262">Paper</a>]**
-**[<a href="http://xhslink.com/o/8xZBw4JYPbB ">中文解读</a>]**
+**[<a href="http://xhslink.com/o/8xZBw4JYPbB">中文解读</a>]**
 
 </div>
 
