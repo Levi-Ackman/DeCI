@@ -8,7 +8,7 @@
 **[<a href="https://arxiv.org/abs/2602.08262">Paper</a>]**
 </div>
 
-## Get Started
+## Usage
 
 1. Install requirements. ```pip install -r requirements.txt```
 2. Download data. You can download all the datasets from [**datasets**](https://drive.google.com/u/0/uc?id=1EtxBoOulKMCJ8y6Zh5GtxH56pOYHDlD0&export=download). **All the datasets are well pre-processed** and can be used easily. Then place them under a folder `./dataset`.
