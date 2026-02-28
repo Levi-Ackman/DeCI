@@ -1,6 +1,6 @@
 <div align="center">
   <h2><b> Code for Paper:</b></h2>
-  <h2><b> Moving Beyond Functional Connectivity: Time-Series Modeling for fMRI-Based Brain Disorder Classification </b></h2>
+  <h2><b> Moving Beyond Functional Connectivity: Time-Series Modeling for fMRI-Based Brain Disorder Classification (IEEE TMI) </b></h2>
 </div>
 
 ## Get Started
