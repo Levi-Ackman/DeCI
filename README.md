@@ -48,8 +48,8 @@
 ## Usage
 
 1. Install requirements. ```pip install -r requirements.txt```
-2. Download data. You can download all the datasets from [**datasets**](https://drive.google.com/u/0/uc?id=1EtxBoOulKMCJ8y6Zh5GtxH56pOYHDlD0&export=download). **All the datasets are well pre-processed** and can be used easily. Then place them under a folder `./dataset`.
-3. Train the model. We provide the experiment scripts of all benchmarks under the folder `./scripts`. 
+2. Download data. The information on the used dataset can be found in [**Xu *et.al***](https://github.com/brainnetuoa/data_driven_network_neuroscience). You can download all the datasets from [**datasets**](https://doi.org/10.17608/k6.auckland.21397377). **All the datasets are well pre-processed** and can be used easily. Then place them in a folder `./dataset`.
+3. Train the model. We provide experiment scripts for all benchmarks in the `./scripts` folder. 
 4. You can use bash commands to individually run scripts in the 'scripts' folder from the command line to obtain results for individual datasets. For example, you can use the command below to obtain the result of DeCI on TaoWu:
    
       ```bash scripts/DeCI/Taowu.sh ```
